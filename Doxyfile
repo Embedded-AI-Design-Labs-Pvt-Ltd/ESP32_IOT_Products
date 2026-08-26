@@ -1,0 +1,12 @@
+PROJECT_NAME           = ESP32C3_IoT_Platform
+OUTPUT_DIRECTORY       = docs/html/doxygen
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+RECURSIVE              = YES
+INPUT                  = components main include
+FILE_PATTERNS          = *.c *.h
+EXTRACT_ALL            = YES
+OPTIMIZE_OUTPUT_FOR_C  = YES
+WARN_IF_UNDOCUMENTED   = NO
+HAVE_DOT               = NO
+QUIET                  = YES

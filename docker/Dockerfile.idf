@@ -1,0 +1,8 @@
+# Hardware firmware builder — ESP-IDF 5.3 on ESP32-C3.
+FROM espressif/idf:v5.3.2
+
+WORKDIR /project
+ENV IDF_TARGET=esp32c3
+
+# Reproducible: pin IDF image tag. sdkconfig is generated from sdkconfig.defaults.
+CMD ["bash", "-lc", "idf.py set-target esp32c3 && idf.py build"]

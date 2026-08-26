@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Function catalog — ESP32-C3 IoT</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="banner"><div><h1>Function catalog</h1><p class="sub">Banners, owning thread, system calls</p></div></header>
+  <nav><a href="index.html">Console</a><a href="architecture.html">Architecture</a></nav>
+  <section>
+    <p>Each public API is documented in the matching header with Doxygen banners. Line-by-line comments are in the <code>.c</code> files.</p>
+    <table>
+      <thead><tr><th>API</th><th>Thread</th><th>ISR?</th><th>System calls / IDF</th><th>Sync</th></tr></thead>
+      <tbody>
+        <tr><td>iot_gpio_write</td><td>any task</td><td>no</td><td>gpio_set_level</td><td>mutex</td></tr>
+        <tr><td>iot_uart_write</td><td>any task</td><td>no</td><td>uart_write_bytes</td><td>per-port mutex + RS485 DE</td></tr>
+        <tr><td>iot_i2c_write_read</td><td>any task</td><td>no</td><td>i2c_master_write_read_device</td><td>mutex</td></tr>
+        <tr><td>iot_spi_transfer</td><td>any task</td><td>no</td><td>spi_device_transmit</td><td>mutex</td></tr>
+        <tr><td>iot_adc_read_mv</td><td>any task</td><td>no</td><td>adc_oneshot_read</td><td>mutex</td></tr>
+        <tr><td>iot_exti ISR</td><td>ISR</td><td>yes</td><td>gpio ISR service</td><td>GiveFromISR only</td></tr>
+        <tr><td>iot_wifi_start</td><td>app_main / cmd</td><td>no</td><td>esp_wifi_*</td><td>state mutex + event group</td></tr>
+        <tr><td>iot_ble GATT cb</td><td>NimBLE</td><td>no block</td><td>ble_gatts_*, os_mbuf</td><td>queue send timeout 0</td></tr>
+        <tr><td>iot_mqtt_publish_telemetry</td><td>mqtt_pump</td><td>no</td><td>esp_mqtt_client_publish</td><td>IDF client</td></tr>
+        <tr><td>iot_ota_start</td><td>ota task</td><td>no</td><td>esp_https_ota_*</td><td>IOT_EVT_OTA_BUSY</td></tr>
+        <tr><td>iot_wdt_reset</td><td>wdt task</td><td>no</td><td>esp_task_wdt_reset</td><td>none</td></tr>
+        <tr><td>iot_config_save</td><td>any task</td><td>no</td><td>nvs_set_*</td><td>mutex</td></tr>
+      </tbody>
+    </table>
+    <h2>POSIX / host simulation</h2>
+    <p>On host, <code>iot_rtos.c</code> maps tasks to Win32 threads or POSIX pthreads, mutexes to <code>CreateMutex</code>/<code>pthread_mutex</code>, and queues to a bounded ring with semaphores. This is the no-hardware virtual path used by Docker <code>Dockerfile.sim</code> and <code>tests/host</code>.</p>
+  </section>
+</body>
+</html>

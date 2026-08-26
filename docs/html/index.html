@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ESP32-C3 IoT Platform Console</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "dark" });
+    window.mermaid = mermaid;
+  </script>
+</head>
+<body>
+  <header class="banner">
+    <div>
+      <h1>ESP32-C3 Commercial IoT Platform</h1>
+      <p class="sub">Live device &amp; host simulation · layered firmware · FreeRTOS · MQTT/BLE/OTA</p>
+    </div>
+    <div class="mode-box">
+      <label>Mode
+        <select id="mode">
+          <option value="simulation">Simulation (no hardware)</option>
+          <option value="live">Live (MQTT / serial)</option>
+        </select>
+      </label>
+      <label>Profile
+        <select id="profile">
+          <option value="energy">Smart Energy</option>
+          <option value="industrial">Industrial</option>
+          <option value="predictive">Predictive</option>
+          <option value="water">Water Meter</option>
+          <option value="ev_charger">EV Charger GW</option>
+          <option value="automotive">Automotive CAN GW</option>
+          <option value="asset_tracker">BLE Asset Tracker</option>
+          <option value="agriculture">Agriculture</option>
+          <option value="coldchain">Cold-Chain</option>
+          <option value="robotics">Robotics GW</option>
+        </select>
+      </label>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#live">Live / Sim</a>
+    <a href="#tasks">Tasks</a>
+    <a href="#flows">Flows</a>
+    <a href="#api">API banners</a>
+    <a href="architecture.html">Architecture</a>
+    <a href="functions.html">Function catalog</a>
+  </nav>
+
+  <section id="live">
+    <h2>Runtime</h2>
+    <div class="grid3">
+      <article class="card" id="tele-card"><h3>Telemetry</h3><pre id="telemetry">loading…</pre></article>
+      <article class="card">
+        <h3>Connectivity</h3>
+        <ul id="conn"></ul>
+      </article>
+      <article class="card">
+        <h3>Data path</h3>
+        <p class="mono">ISR → sem → Sensor → sample_q → Proc → telemetry_q → MQTT → Cloud</p>
+        <p class="mono">Cloud → MQTT → command_q → Cmd task → HAL → actuator</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="tasks">
+    <h2>FreeRTOS tasks</h2>
+    <table>
+      <thead><tr><th>Task</th><th>Prio</th><th>Stack</th><th>Synchronization</th></tr></thead>
+      <tbody id="task-body"></tbody>
+    </table>
+  </section>
+
+  <section id="flows">
+    <h2>Sequence · control · data flow</h2>
+    <div class="grid2">
+      <article class="card">
+        <h3>Boot sequence</h3>
+        <pre class="mermaid">
+sequenceDiagram
+  participant M as app_main
+  participant N as NVS
+  participant D as Drivers/HAL
+  participant T as FreeRTOS tasks
+  participant B as BLE
+  participant W as Wi-Fi
+  participant Q as MQTT
+  M->>N: nvs_flash_init
+  M->>D: board + gpio/uart/wdt
+  M->>T: queues, mutex, sem, event group
+  M->>B: NimBLE advertise (commissioning)
+  alt provisioned
+    M->>W: STA + backoff
+    W-->>M: WIFI_IP_READY
+    M->>Q: TLS MQTT connect
+  else unprovisioned
+    B-->>M: config characteristic write
+  end
+        </pre>
+      </article>
+      <article class="card">
+        <h3>ISR to cloud</h3>
+        <pre class="mermaid">
+flowchart LR
+  ISR[GPIO/GPTimer ISR] -->|GiveFromISR| SEM[binary semaphore]
+  SEM --> ST[Sensor task]
+  ST -->|queue| PQ[sample_q]
+  PQ --> PR[Processing task]
+  PR -->|queue| TQ[telemetry_q]
+  TQ --> MQ[MQTT pump task]
+  MQ -->|TLS QoS1| BR[Broker AWS/Azure/GCP]
+        </pre>
+      </article>
+    </div>
+  </section>
+
+  <section id="api">
+    <h2>Public API function banners</h2>
+    <p>Full line-oriented comments live in the C sources. HTML catalog: <a href="functions.html">functions.html</a></p>
+    <pre class="banner-fn">
+/**
+ * @brief Thread-safe UART write. RS485 DE is asserted only around the bytes.
+ * @param port IOT_UART_PORT_0 (console) or PORT_1 (RS485 + external MAX3485)
+ * @param data payload
+ * @param len  byte count
+ * @param timeout_ms mutex + TX wait
+ * @retval IOT_OK or IOT_ERR_IO
+ * @thread any task; not ISR
+ * @syscalls uart_write_bytes, uart_wait_tx_done, gpio_set_level
+ */
+iot_err_t iot_uart_write(iot_uart_port_t port, const uint8_t *data, size_t len, uint32_t timeout_ms);
+    </pre>
+  </section>
+
+  <footer>
+    ESP32-C3 has no native CAN — automotive profile requires MCP2515 + transceiver.
+    Credentials are never stored in source. Version 1.0.0
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

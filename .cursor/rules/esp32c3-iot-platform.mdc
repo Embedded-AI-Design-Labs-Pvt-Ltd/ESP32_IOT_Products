@@ -1,0 +1,24 @@
+---
+description: ESP32-C3 commercial IoT platform architecture, coding, and agent workflow
+alwaysApply: true
+---
+
+# ESP32-C3 IoT Platform Rules
+
+Layering (never skip downward):
+Application → IoT Services → Communication Services → Device Services → Drivers/HAL → ESP-IDF → ESP32-C3
+
+- Application and product profiles call platform APIs only. They must not include ESP-IDF driver headers.
+- Drivers wrap ESP-IDF (`driver/*`, `esp_adc`, LEDC, GPTimer, NimBLE, `esp_wifi`, `mqtt_client`, `esp_https_ota`).
+- No fake register-level hardware APIs. Document external hardware (MCP2515 CAN, RS485 transceiver, sensors).
+- ESP32-C3 has no native CAN/TWAI. Automotive profiles use SPI CAN controller + transceiver.
+- ISR: no blocking, no malloc, no logs. Use `xSemaphoreGiveFromISR` / `vTaskNotifyGiveFromISR` / `xQueueSendFromISR`.
+- Resource locks use mutexes. Binary semaphores are for events, not mutual exclusion.
+- Errors propagate as `iot_err_t`. Do not swallow `esp_err_t`.
+- No production credentials in source. NVS or CI secrets only.
+- Preserve working code. Do not overwrite modules without justification.
+- MISRA-oriented: explicit casts, no recursion in drivers, bounded buffers, `static` internals.
+- Doxygen file and function banners on every public API. Line comments for non-obvious steps.
+- New modules need: `.c`, `.h`, Kconfig/config, unit test, README notes, failure scenarios.
+- Product work uses Agent 10 (iot-application). Do not implement all products in one change unless asked.
+- Execution order: Architect → ESP-IDF → Driver → FreeRTOS → BLE → Wi-Fi → MQTT → Security/OTA → Diagnostics → Products → Test → Performance → Docs → CI → Principal review.

@@ -1,0 +1,49 @@
+# iot_core
+menu "IoT Core"
+
+    config IOT_DEVICE_ID_DEFAULT
+        string "Default device id (overwritten by provisioning)"
+        default "esp32c3-unprovisioned"
+
+    choice IOT_PRODUCT_PROFILE
+        prompt "Product application profile"
+        default IOT_PROFILE_ENERGY
+        help
+            Selects which product profile main() starts. Common platform APIs stay unchanged.
+
+        config IOT_PROFILE_ENERGY
+            bool "Smart Energy Monitor"
+        config IOT_PROFILE_INDUSTRIAL
+            bool "Industrial Machine Monitoring"
+        config IOT_PROFILE_PREDICTIVE
+            bool "Predictive Maintenance Node"
+        config IOT_PROFILE_WATER
+            bool "Smart Water Meter"
+        config IOT_PROFILE_EV_CHARGER
+            bool "EV Charger IoT Gateway"
+        config IOT_PROFILE_AUTOMOTIVE
+            bool "Automotive CAN/IoT Gateway"
+        config IOT_PROFILE_ASSET_TRACKER
+            bool "BLE Asset Tracker"
+        config IOT_PROFILE_AGRICULTURE
+            bool "Smart Agriculture Controller"
+        config IOT_PROFILE_COLDCHAIN
+            bool "Cold-Chain Monitoring Device"
+        config IOT_PROFILE_ROBOTICS
+            bool "Robotics Telemetry Gateway"
+    endchoice
+
+    choice IOT_CLOUD_PROVIDER
+        prompt "Cloud MQTT profile"
+        default IOT_CLOUD_GENERIC
+        config IOT_CLOUD_GENERIC
+            bool "Generic MQTTS broker"
+        config IOT_CLOUD_AWS_IOT
+            bool "AWS IoT Core"
+        config IOT_CLOUD_AZURE_IOT
+            bool "Azure IoT Hub"
+        config IOT_CLOUD_GCP_MQTT
+            bool "GCP-compatible MQTT (self-managed)"
+    endchoice
+
+endmenu

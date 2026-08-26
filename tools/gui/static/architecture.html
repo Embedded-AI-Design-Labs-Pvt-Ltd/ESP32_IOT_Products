@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Architecture — ESP32-C3 IoT</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "dark" });
+  </script>
+</head>
+<body>
+  <header class="banner"><div><h1>Architecture</h1><p class="sub">Layers, tasks, security, OTA, fault recovery</p></div></header>
+  <nav><a href="index.html">Console</a><a href="functions.html">Functions</a></nav>
+  <section>
+    <article class="card">
+      <h2>System / software layers</h2>
+      <pre class="mermaid">
+flowchart TB
+  APP[Application profiles x10]
+  IOT[IoT Services: telemetry, commands, provision]
+  COM[Communication: BLE NimBLE, Wi-Fi STA, MQTT TLS]
+  DEV[Device services: NVS config, diag, OTA, identity]
+  HAL[Drivers/HAL: GPIO UART I2C SPI ADC PWM GPTIMER EXTI WDT]
+  IDF[ESP-IDF 5.x]
+  HW[ESP32-C3: RISC-V Wi-Fi BLE5 ADC1 LEDC]
+  EXT[External: MAX3485, MCP2515+CAN transceiver, CTs, flow, IMU]
+  APP --> IOT --> COM --> DEV --> HAL --> IDF --> HW
+  HAL -. SPI/UART .-> EXT
+      </pre>
+    </article>
+    <article class="card">
+      <h2>Wi-Fi state machine</h2>
+      <pre class="mermaid">
+stateDiagram-v2
+  [*] --> WIFI_DISCONNECTED
+  WIFI_DISCONNECTED --> WIFI_CONNECTING: iot_wifi_start
+  WIFI_CONNECTING --> WIFI_CONNECTED: STA_CONNECTED
+  WIFI_CONNECTED --> WIFI_IP_READY: GOT_IP
+  WIFI_IP_READY --> WIFI_RECONNECTING: DISCONNECTED
+  WIFI_RECONNECTING --> WIFI_CONNECTING: backoff
+  WIFI_CONNECTING --> WIFI_ERROR: set_config fail
+      </pre>
+    </article>
+    <article class="card">
+      <h2>OTA + rollback</h2>
+      <pre class="mermaid">
+sequenceDiagram
+  participant C as Cloud
+  participant M as MQTT/cmd
+  participant O as ota task
+  participant B as otadata
+  C->>M: {"ota_url":"https://..."}
+  M->>O: iot_ota_start https only
+  loop download
+    O->>O: esp_https_ota_perform + WDT pet
+  end
+  alt complete
+    O->>B: switch slot
+    O->>O: esp_restart
+    Note over O: app_main calls mark_valid
+  else fail
+    O->>B: abort — previous slot bootable
+  end
+      </pre>
+    </article>
+    <article class="card">
+      <h2>Fault recovery</h2>
+      <pre class="mermaid">
+flowchart TD
+  F[Fault] --> W{Watchdog?}
+  W -->|task/int WDT| R[Panic reboot + DIAG_WATCHDOG_RESET]
+  W -->|Wi-Fi drop| B[WIFI_RECONNECTING exponential backoff]
+  W -->|MQTT drop| Q[IDF client reconnect 5s]
+  W -->|sensor timeout| D[DIAG_SENSOR_TIMEOUT drop sample]
+  W -->|bad command| X[IOT_ERR_DENIED no actuator]
+      </pre>
+    </article>
+  </section>
+</body>
+</html>

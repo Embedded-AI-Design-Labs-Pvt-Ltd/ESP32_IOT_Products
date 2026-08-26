@@ -1,0 +1,14 @@
+# No-hardware simulation + GUI + host tests.
+FROM python:3.12-slim
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        gcc cmake make clang-format \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /project
+COPY . /project
+
+RUN pip install --no-cache-dir flask
+
+EXPOSE 8080
+CMD ["python", "tools/gui/server.py"]
