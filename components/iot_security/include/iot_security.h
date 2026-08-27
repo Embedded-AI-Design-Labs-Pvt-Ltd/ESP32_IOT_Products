@@ -1,5 +1,7 @@
 /**
  * @file iot_security.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Device identity, TLS policy, and NVS protection strategy (no hardcoded secrets).
  */
 #ifndef IOT_SECURITY_H

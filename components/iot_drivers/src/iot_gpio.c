@@ -1,5 +1,7 @@
 /**
  * @file iot_gpio.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief GPIO HAL. Mutex-owned; not ISR-safe except via iot_exti.
  */
 #include "iot_gpio.h"

@@ -13,3 +13,11 @@ Command JSON:
 `ev.reject_contactor`, `auto.reject_tx`, and `robot.reject_motion` always return `IOT_ERR_DENIED`.
 
 See `docs/usecases/README.md` for the full list.
+
+---
+
+**Embedded AI Labs** — *Intelligence at the Edge*  
+ಎಂಬೆಡೆಡ್ ಎಐ ಲ್ಯಾಬ್ಸ್  
+**Embedded AI Design Labs Pvt Ltd**  
+Muhammad Samiullah — CTO & Founder  
+© 2026 Copyright. All rights reserved.

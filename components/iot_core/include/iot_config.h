@@ -1,5 +1,7 @@
 /**
  * @file iot_config.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Compile-time and runtime configuration keys (NVS-backed).
  *
  * Production credentials are never stored in this header. Keys are names only.

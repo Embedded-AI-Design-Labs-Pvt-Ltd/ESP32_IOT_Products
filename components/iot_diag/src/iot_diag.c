@@ -1,5 +1,7 @@
 /**
  * @file iot_diag.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Health counters. ISR path only increments atomics.
  */
 #include "iot_diag.h"

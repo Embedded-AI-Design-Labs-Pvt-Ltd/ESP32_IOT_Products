@@ -1,5 +1,7 @@
 /**
  * @file main.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief ESP32-C3 IoT platform startup — layered bring-up then profile.
  *
  * Boot sequence:
@@ -61,6 +63,10 @@ static iot_err_t nvs_bootstrap(void)
 void app_main(void)
 {
     IOT_LOGI(TAG, "platform %s", IOT_PLATFORM_NAME);
+    IOT_LOGI(TAG, "%s — %s", IOT_COPYRIGHT_BRAND, IOT_COPYRIGHT_SLOGAN);
+    IOT_LOGI(TAG, "%s", IOT_COPYRIGHT_ORG);
+    IOT_LOGI(TAG, "%s — %s", IOT_COPYRIGHT_AUTHOR, IOT_COPYRIGHT_TITLE);
+    IOT_LOGI(TAG, "© %s Copyright. All rights reserved.", IOT_COPYRIGHT_YEAR);
 
     if (nvs_bootstrap() != IOT_OK) {
         IOT_LOGE(TAG, "nvs fail");

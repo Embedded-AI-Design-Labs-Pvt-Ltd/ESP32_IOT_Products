@@ -1,5 +1,7 @@
 /**
  * @file iot_mqtt.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief MQTT task: telemetry_q → broker; inbound command → command_q.
  *
  * Topics:

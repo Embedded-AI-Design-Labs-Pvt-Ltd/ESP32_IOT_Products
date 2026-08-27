@@ -1,5 +1,7 @@
 /**
  * @file iot_adc.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief ADC1 oneshot HAL (ESP32-C3 has ADC1 only for oneshot in typical IDF configs).
  */
 #ifndef IOT_ADC_H

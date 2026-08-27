@@ -1,5 +1,7 @@
 /**
  * @file iot_uc_field.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Asset tracker, agriculture, cold-chain, and robotics gateway use cases.
  */
 #include "iot_uc_priv.h"

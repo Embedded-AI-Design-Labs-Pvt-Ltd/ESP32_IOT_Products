@@ -1,5 +1,7 @@
 /**
  * @file test_runner.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Host unit tests (no ESP32 hardware). Compile with tests/host/CMakeLists.txt
  *
  * Test ID format: UT-<MODULE>-<NN>

@@ -1,5 +1,7 @@
 /**
  * @file iot_log.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Diagnostic logging facade. Maps to ESP_LOG on target, stdout on host.
  *
  * @isr_safety Do not call from ISR. Use iot_diag_isr_bump() instead.

@@ -1,5 +1,7 @@
 /**
  * @file iot_tasks.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Named platform task table — single place for priorities and stacks.
  *
  * @sync ISR → binary semaphore → sensor task → sample queue → processing → telemetry queue → MQTT

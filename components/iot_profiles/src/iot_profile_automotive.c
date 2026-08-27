@@ -1,5 +1,7 @@
 /**
  * @file iot_profile_automotive.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Automotive CAN gateway — MCP2515 frames into auto.* use cases.
  */
 #include "iot_profile.h"

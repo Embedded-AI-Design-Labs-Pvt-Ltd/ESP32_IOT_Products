@@ -1,5 +1,7 @@
 /**
  * @file iot_i2c.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief I2C master HAL (legacy driver/i2c.h — ESP-IDF 5.x compatible).
  */
 #include "iot_i2c.h"

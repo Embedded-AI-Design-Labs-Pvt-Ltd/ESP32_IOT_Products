@@ -1,5 +1,7 @@
 /**
  * @file iot_drivers.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Aggregated driver bring-up used by startup.
  */
 #include "iot_drivers.h"

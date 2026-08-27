@@ -1,5 +1,7 @@
 /**
  * @file iot_exti.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief GPIO ISR → binary semaphore. No logging, no malloc in ISR.
  */
 #include "iot_exti.h"

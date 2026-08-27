@@ -1,5 +1,7 @@
 /**
  * @file iot_profile.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Selects compiled-in product profile (Kconfig).
  */
 #include "iot_profile.h"

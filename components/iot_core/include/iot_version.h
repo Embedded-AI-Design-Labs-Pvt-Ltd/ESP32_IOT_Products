@@ -1,5 +1,7 @@
 /**
  * @file iot_version.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Firmware semantic version consumed by OTA and BLE Device Information.
  */
 #ifndef IOT_VERSION_H

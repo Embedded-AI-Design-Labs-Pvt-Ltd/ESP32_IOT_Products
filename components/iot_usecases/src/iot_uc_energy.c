@@ -1,5 +1,7 @@
 /**
  * @file iot_uc_energy.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Smart energy monitor use cases — measurement, limits, calibration, daily kWh.
  *
  * External: voltage divider + CT/shunt. Not a certified revenue meter.

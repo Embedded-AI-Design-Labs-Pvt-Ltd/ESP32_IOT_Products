@@ -1,6 +1,12 @@
 """
 IoT console: simulation (no hardware) and live MQTT/serial bridge.
 Run: python tools/gui/server.py
+
+
+Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+Embedded AI Labs — Intelligence at the Edge
+Muhammad Samiullah — CTO & Founder
+© 2026 Copyright. All rights reserved.
 """
 from __future__ import annotations
 

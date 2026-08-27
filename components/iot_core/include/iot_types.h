@@ -1,5 +1,7 @@
 /**
  * @file iot_types.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Common scalar types, device identity, and telemetry envelopes.
  */
 #ifndef IOT_TYPES_H

@@ -15,3 +15,11 @@ Thread-safe configuration, error model, and logging used by every layer.
 | CFG-01 | NVS empty | Defaults loaded, device unprovisioned |
 | CFG-02 | NVS corrupt | ESP-IDF erases namespace; defaults restored |
 | LOG-01 | Called from ISR | Forbidden; use diagnostic ISR counters |
+
+---
+
+**Embedded AI Labs** — *Intelligence at the Edge*  
+ಎಂಬೆಡೆಡ್ ಎಐ ಲ್ಯಾಬ್ಸ್  
+**Embedded AI Design Labs Pvt Ltd**  
+Muhammad Samiullah — CTO & Founder  
+© 2026 Copyright. All rights reserved.

@@ -1,5 +1,7 @@
 /**
  * @file iot_profile_ev.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief EV charger IoT gateway — non-safety use cases only.
  */
 #include "iot_profile.h"

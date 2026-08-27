@@ -1,5 +1,7 @@
 /**
  * @file iot_uart.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief UART HAL with optional RS485 DE/RE pin (external transceiver required).
  */
 #include "iot_uart.h"

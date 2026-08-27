@@ -1,5 +1,7 @@
 /**
  * @file iot_config.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Runtime configuration. NVS on target; RAM file-backed image on host.
  *
  * @ownership Single mutex `s_lock` owned by this module.

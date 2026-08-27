@@ -1,5 +1,7 @@
 /**
  * @file iot_services.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief IoT service facade: telemetry JSON helpers and command dispatch.
  */
 #ifndef IOT_SERVICES_H

@@ -1,5 +1,7 @@
 /**
  * @file iot_wifi.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief STA connection manager. ESP-IDF event loop drives the state machine.
  *
  * @thread wifi_mgr task + Wi-Fi event task (IDF)

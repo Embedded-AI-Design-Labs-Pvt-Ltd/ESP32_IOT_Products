@@ -1,5 +1,7 @@
 /**
  * @file iot_ota.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief HTTPS OTA with rollback and watchdog feeding during download.
  */
 #ifndef IOT_OTA_H

@@ -1,5 +1,7 @@
 /**
  * @file iot_profile_water.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Smart water meter — metering/leak/valve use cases.
  */
 #include "iot_profile.h"

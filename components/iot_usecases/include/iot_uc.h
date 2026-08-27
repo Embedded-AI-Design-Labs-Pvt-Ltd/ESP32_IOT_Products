@@ -1,5 +1,7 @@
 /**
  * @file iot_uc.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Complete use-case catalog for the ESP32-C3 IoT platform.
  *
  * Cloud/BLE command format:

@@ -17,3 +17,11 @@ Wi-Fi, BLE, MQTT, OTA, storage, and application control tasks are started by the
 ## ISR rule
 
 `iot_sem_give_from_isr(sensor_isr_sem)` only. No logs, no malloc, no driver init.
+
+---
+
+**Embedded AI Labs** — *Intelligence at the Edge*  
+ಎಂಬೆಡೆಡ್ ಎಐ ಲ್ಯಾಬ್ಸ್  
+**Embedded AI Design Labs Pvt Ltd**  
+Muhammad Samiullah — CTO & Founder  
+© 2026 Copyright. All rights reserved.

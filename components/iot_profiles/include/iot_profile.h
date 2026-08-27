@@ -1,5 +1,7 @@
 /**
  * @file iot_profile.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Product profile interface. Profiles use HAL + IoT services only.
  */
 #ifndef IOT_PROFILE_H

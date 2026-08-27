@@ -23,3 +23,11 @@ Constraints:
 Output:
 - Architecture documents, interface specifications, sequence/control/data-flow diagrams.
 - Impact notes for other agents (ESP-IDF, FreeRTOS, Driver, BLE, Wi-Fi, MQTT, Security, Diagnostics).
+
+---
+
+**Embedded AI Labs** — *Intelligence at the Edge*  
+ಎಂಬೆಡೆಡ್ ಎಐ ಲ್ಯಾಬ್ಸ್  
+**Embedded AI Design Labs Pvt Ltd**  
+Muhammad Samiullah — CTO & Founder  
+© 2026 Copyright. All rights reserved.

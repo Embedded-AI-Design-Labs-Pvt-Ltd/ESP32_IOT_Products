@@ -1,5 +1,7 @@
 /**
  * @file iot_profile_industrial.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Industrial machine monitoring: temperature, vibration, current, pressure, state.
  *
  * External: I2C temp (e.g. TMP117 @0x48), analog vibration, CT, 4-20 mA pressure via ADC.

@@ -12,3 +12,11 @@ Map:
 - cloud-to-device → subscribe Hub C2D topic
 
 This platform's default topic layout is generic MQTT. For Hub, set `IOT_CLOUD_AZURE_IOT` and extend `iot_mqtt.c` with Hub username format in a follow-up — keep secrets in NVS.
+
+---
+
+**Embedded AI Labs** — *Intelligence at the Edge*  
+ಎಂಬೆಡೆಡ್ ಎಐ ಲ್ಯಾಬ್ಸ್  
+**Embedded AI Design Labs Pvt Ltd**  
+Muhammad Samiullah — CTO & Founder  
+© 2026 Copyright. All rights reserved.

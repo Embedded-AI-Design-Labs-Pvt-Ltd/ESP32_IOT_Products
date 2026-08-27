@@ -11,3 +11,11 @@ When invoked:
 3. Trace Sensor → Driver → Task → Queue → Processing → MQTT → Cloud and Cloud → MQTT → Queue → Task → Driver → Actuator, and ISR → sync primitive → task.
 4. Fix confirmed defects with minimal, justified diffs. Preserve working behavior.
 5. Produce: architecture review, defects found, defects fixed, remaining risks, test coverage, performance notes, memory usage, production-readiness assessment.
+
+---
+
+**Embedded AI Labs** — *Intelligence at the Edge*  
+ಎಂಬೆಡೆಡ್ ಎಐ ಲ್ಯಾಬ್ಸ್  
+**Embedded AI Design Labs Pvt Ltd**  
+Muhammad Samiullah — CTO & Founder  
+© 2026 Copyright. All rights reserved.

@@ -1,5 +1,7 @@
 /**
  * @file iot_provision.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief BLE/Wi-Fi device provisioning (no production secrets in firmware).
  */
 #ifndef IOT_PROVISION_H

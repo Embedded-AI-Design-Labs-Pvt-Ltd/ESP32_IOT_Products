@@ -11,3 +11,11 @@ When invoked:
 3. BLE callbacks must not block. Heavy work is deferred to FreeRTOS tasks via queues or task notifications.
 4. Coordinate with Wi-Fi provisioning (BLE commissioning) and Security agent for pairing keys.
 5. Do not implement Classic Bluetooth (unsupported on ESP32-C3).
+
+---
+
+**Embedded AI Labs** — *Intelligence at the Edge*  
+ಎಂಬೆಡೆಡ್ ಎಐ ಲ್ಯಾಬ್ಸ್  
+**Embedded AI Design Labs Pvt Ltd**  
+Muhammad Samiullah — CTO & Founder  
+© 2026 Copyright. All rights reserved.

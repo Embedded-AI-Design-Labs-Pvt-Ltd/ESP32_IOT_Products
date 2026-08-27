@@ -37,3 +37,11 @@ Project-level subagents live in `.cursor/agents/`. Invoke them in order. Do not 
 Use the system-architect subagent to review layered interfaces.
 Use the principal-integration subagent to review ISR and queue ownership.
 ```
+
+---
+
+**Embedded AI Labs** — *Intelligence at the Edge*  
+ಎಂಬೆಡೆಡ್ ಎಐ ಲ್ಯಾಬ್ಸ್  
+**Embedded AI Design Labs Pvt Ltd**  
+Muhammad Samiullah — CTO & Founder  
+© 2026 Copyright. All rights reserved.

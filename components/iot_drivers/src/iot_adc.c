@@ -1,5 +1,7 @@
 /**
  * @file iot_adc.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief ADC1 oneshot HAL (esp_adc/adc_oneshot.h).
  */
 #include "iot_adc.h"

@@ -1,5 +1,7 @@
 /**
  * @file iot_timer.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief GPTimer HAL. Alarm callback runs in ISR — must only GiveFromISR.
  */
 #include "iot_timer.h"

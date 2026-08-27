@@ -1,5 +1,7 @@
 /**
  * @file iot_uc_industrial.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Industrial machine monitoring + predictive-maintenance feature use cases.
  */
 #include "iot_uc_priv.h"

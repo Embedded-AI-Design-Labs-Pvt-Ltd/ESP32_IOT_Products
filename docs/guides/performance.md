@@ -24,3 +24,11 @@
 2. Reduce telemetry JSON with CBOR if cellular/BLE-only products appear.
 3. Pin MQTT task stack after watermark measurement (`uxTaskGetStackHighWaterMark`).
 4. Do not increase `configLOG_DEFAULT_LEVEL` in production.
+
+---
+
+**Embedded AI Labs** — *Intelligence at the Edge*  
+ಎಂಬೆಡೆಡ್ ಎಐ ಲ್ಯಾಬ್ಸ್  
+**Embedded AI Design Labs Pvt Ltd**  
+Muhammad Samiullah — CTO & Founder  
+© 2026 Copyright. All rights reserved.

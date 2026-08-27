@@ -1,5 +1,7 @@
 /**
  * @file iot_diag.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Diagnostic event IDs, counters, and health snapshot.
  */
 #ifndef IOT_DIAG_H

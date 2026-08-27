@@ -1,5 +1,7 @@
 /**
  * @file iot_err.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Platform-wide error codes and propagation helpers.
  *
  * @ownership All layers return iot_err_t. ESP-IDF esp_err_t is converted at the HAL boundary.

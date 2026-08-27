@@ -11,3 +11,11 @@ When invoked:
 3. Implement error logging, event logging, fault counters, health status, and diagnostic snapshot export over MQTT/BLE.
 4. Diagnostics task must be low-impact (bounded CPU, no unbounded logs in hot paths).
 5. ISR context may only record a lock-free counter or FromISR notify — never format logs in ISR.
+
+---
+
+**Embedded AI Labs** — *Intelligence at the Edge*  
+ಎಂಬೆಡೆಡ್ ಎಐ ಲ್ಯಾಬ್ಸ್  
+**Embedded AI Design Labs Pvt Ltd**  
+Muhammad Samiullah — CTO & Founder  
+© 2026 Copyright. All rights reserved.

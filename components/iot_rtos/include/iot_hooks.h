@@ -1,5 +1,7 @@
 /**
  * @file iot_hooks.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Optional profile hooks installed before iot_tasks_start().
  */
 #ifndef IOT_HOOKS_H

@@ -1,5 +1,7 @@
 /**
  * @file iot_timer.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief GPTimer HAL for periodic sampling (not FreeRTOS software timers).
  */
 #ifndef IOT_TIMER_H

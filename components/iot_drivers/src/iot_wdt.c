@@ -1,5 +1,7 @@
 /**
  * @file iot_wdt.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Task watchdog. The dedicated wdt task is the subscribed task.
  */
 #include "iot_wdt.h"

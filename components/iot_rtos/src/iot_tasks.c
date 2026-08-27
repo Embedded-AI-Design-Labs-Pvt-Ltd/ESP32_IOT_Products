@@ -1,5 +1,7 @@
 /**
  * @file iot_tasks.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Platform task set and ISR→task→queue data path.
  *
  * Sequence:

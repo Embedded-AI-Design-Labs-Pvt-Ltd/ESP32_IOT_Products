@@ -1,5 +1,7 @@
 /**
  * @file iot_profile_energy.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Smart Energy Monitor — delegates detailed use cases to iot_uc_energy_*.
  */
 #include "iot_profile.h"

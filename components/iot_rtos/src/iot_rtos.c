@@ -1,5 +1,7 @@
 /**
  * @file iot_rtos.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief FreeRTOS wrappers (ESP32-C3) and Win32/POSIX simulation (host).
  *
  * Demonstrates: xTaskCreate, queues, mutex, binary/counting semaphore,

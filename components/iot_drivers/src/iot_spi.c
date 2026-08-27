@@ -1,5 +1,7 @@
 /**
  * @file iot_spi.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief SPI master HAL. Used for MCP2515 CAN controller (not native TWAI).
  */
 #include "iot_spi.h"

@@ -1,5 +1,7 @@
 /**
  * @file iot_uc_ev_auto.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief EV charger IoT gateway (non-safety) and automotive CAN gateway use cases.
  */
 #include "iot_uc_priv.h"

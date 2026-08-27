@@ -1,3 +1,13 @@
+<p align="center">
+  <img src="tools/gui/static/logo.png" alt="Embedded AI Labs" width="280" />
+</p>
+
+<p align="center">
+  <strong>Embedded AI Design Labs Pvt Ltd</strong><br />
+  <em>Intelligence at the Edge</em><br />
+  ಎಂಬೆಡೆಡ್ ಎಐ ಲ್ಯಾಬ್ಸ್
+</p>
+
 # ESP32-C3 Commercial IoT Platform
 
 Reusable production-oriented firmware for **ESP32-C3** (ESP-IDF + FreeRTOS) that is adapted into ten product profiles rather than ten separate codebases.
@@ -80,3 +90,11 @@ Jenkins pipeline: [ci/jenkins/Jenkinsfile](ci/jenkins/Jenkinsfile) — host test
 ## License
 
 Apache-2.0 (firmware examples). Hardware third-party ICs remain their vendors' IP.
+
+---
+
+**Embedded AI Labs** — *Intelligence at the Edge*  
+ಎಂಬೆಡೆಡ್ ಎಐ ಲ್ಯಾಬ್ಸ್  
+**Embedded AI Design Labs Pvt Ltd**  
+Muhammad Samiullah — CTO & Founder  
+© 2026 Copyright. All rights reserved.

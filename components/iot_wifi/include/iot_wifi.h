@@ -1,5 +1,7 @@
 /**
  * @file iot_wifi.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Thread-safe Wi-Fi station manager with reconnect/backoff.
  */
 #ifndef IOT_WIFI_H

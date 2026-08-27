@@ -1,5 +1,7 @@
 /**
  * @file iot_board.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief ESP32-C3-DevKitM-1 default pin map and external hardware contracts.
  *
  * Native on ESP32-C3: GPIO, UART, I2C, SPI, ADC1, LEDC PWM, GPTimer, Wi-Fi, BLE 5.

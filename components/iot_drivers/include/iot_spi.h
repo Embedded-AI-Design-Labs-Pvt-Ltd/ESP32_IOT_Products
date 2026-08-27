@@ -1,5 +1,7 @@
 /**
  * @file iot_spi.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief SPI master HAL. Chip-select IOT_PIN_SPI_CS_CAN is reserved for MCP2515.
  */
 #ifndef IOT_SPI_H

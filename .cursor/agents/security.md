@@ -13,3 +13,11 @@ When invoked:
 5. Validate MQTT commands (identity, size, schema) before they reach actuators.
 
 Coordinate with DevOps for reproducible signed artifacts.
+
+---
+
+**Embedded AI Labs** — *Intelligence at the Edge*  
+ಎಂಬೆಡೆಡ್ ಎಐ ಲ್ಯಾಬ್ಸ್  
+**Embedded AI Design Labs Pvt Ltd**  
+Muhammad Samiullah — CTO & Founder  
+© 2026 Copyright. All rights reserved.

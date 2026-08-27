@@ -1,5 +1,7 @@
 /**
  * @file iot_log.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Logging backend.
  *
  * @syscalls vprintf / esp_log_write

@@ -1,5 +1,7 @@
 /**
  * @file iot_port.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Target vs host compilation switch. Application code includes this, not ESP-IDF.
  */
 #ifndef IOT_PORT_H

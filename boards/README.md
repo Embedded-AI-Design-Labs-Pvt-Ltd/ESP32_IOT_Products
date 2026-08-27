@@ -10,3 +10,11 @@ Primary target is **ESP32-C3 + ESP-IDF**. Application code uses `iot_*` HAL only
 | Raspberry Pi | `iot_rtos` POSIX already; drivers → Linux `/dev/i2c-1`, `spidev`, pigpio | Not real-time; use for gateways |
 
 Do not call Arduino `digitalWrite` or STM32 `HAL_GPIO_WritePin` from product profiles.
+
+---
+
+**Embedded AI Labs** — *Intelligence at the Edge*  
+ಎಂಬೆಡೆಡ್ ಎಐ ಲ್ಯಾಬ್ಸ್  
+**Embedded AI Design Labs Pvt Ltd**  
+Muhammad Samiullah — CTO & Founder  
+© 2026 Copyright. All rights reserved.

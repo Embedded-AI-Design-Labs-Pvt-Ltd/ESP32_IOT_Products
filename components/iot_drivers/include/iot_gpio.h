@@ -1,5 +1,7 @@
 /**
  * @file iot_gpio.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Thread-safe GPIO HAL wrapping ESP-IDF driver/gpio.h.
  */
 #ifndef IOT_GPIO_H

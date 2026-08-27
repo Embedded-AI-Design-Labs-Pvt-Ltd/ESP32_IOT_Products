@@ -1,5 +1,7 @@
 /**
  * @file iot_services.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Command bus: BLE/MQTT → security validate → provision/OTA/profile.
  */
 #include "iot_services.h"

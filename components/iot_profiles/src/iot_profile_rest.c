@@ -1,5 +1,7 @@
 /**
  * @file iot_profile_rest.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Tracker, agriculture, cold-chain, robotics — use-case ingest + command dispatch.
  */
 #include "iot_profile.h"

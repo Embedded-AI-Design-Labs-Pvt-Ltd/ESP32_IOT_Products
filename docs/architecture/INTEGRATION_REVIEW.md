@@ -54,3 +54,11 @@ See `docs/guides/performance.md`. Dual-OTA 4 MB layout. Task stacks ~4 KB typica
 
 1. Pulse GPIO → `gpio_isr` → `iot_sem_give_from_isr(sensor_isr_sem)` → Sensor task → `sample_q` (module-owned) → Proc → `telemetry_q` → MQTT pump → broker.  
 2. Broker → MQTT_EVENT_DATA → `command_q` timeout 0 → Cmd task → validate → profile HAL.
+
+---
+
+**Embedded AI Labs** — *Intelligence at the Edge*  
+ಎಂಬೆಡೆಡ್ ಎಐ ಲ್ಯಾಬ್ಸ್  
+**Embedded AI Design Labs Pvt Ltd**  
+Muhammad Samiullah — CTO & Founder  
+© 2026 Copyright. All rights reserved.

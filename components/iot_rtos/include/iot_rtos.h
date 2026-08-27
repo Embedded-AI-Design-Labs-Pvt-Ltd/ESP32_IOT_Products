@@ -1,5 +1,7 @@
 /**
  * @file iot_rtos.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief OS abstraction over FreeRTOS (target) and Win32/POSIX (host simulation).
  *
  * @ownership Callers own the objects they create and must destroy them.

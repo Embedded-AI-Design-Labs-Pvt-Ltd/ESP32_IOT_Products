@@ -1,5 +1,7 @@
 /**
  * @file iot_ble.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Generic IoT GATT server (NimBLE). Callbacks only enqueue work.
  */
 #ifndef IOT_BLE_H

@@ -11,3 +11,11 @@ When invoked:
 3. Provide optimization recommendations that do not break real-time or ISR safety.
 4. Record budgets in `docs/guides/performance.md` and diagnostic snapshots.
 5. ESP32-C3 has limited SRAM (~400 KB). Keep per-task stacks justified and MQTT buffers bounded.
+
+---
+
+**Embedded AI Labs** — *Intelligence at the Edge*  
+ಎಂಬೆಡೆಡ್ ಎಐ ಲ್ಯಾಬ್ಸ್  
+**Embedded AI Design Labs Pvt Ltd**  
+Muhammad Samiullah — CTO & Founder  
+© 2026 Copyright. All rights reserved.

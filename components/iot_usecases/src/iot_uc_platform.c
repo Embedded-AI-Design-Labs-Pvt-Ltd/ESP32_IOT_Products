@@ -1,5 +1,7 @@
 /**
  * @file iot_uc_platform.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Platform-wide use cases: provision, OTA, identity, diag, NVS reset.
  */
 #include "iot_uc_priv.h"

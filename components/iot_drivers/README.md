@@ -23,3 +23,11 @@ HAL wrapping ESP-IDF. Application code must include these headers only.
 | SPI-01 | MCP2515 missing | transfer may succeed electrically; protocol CRC fails upper layer |
 | ADC-01 | Invalid GPIO | `IOT_ERR_INVALID_ARG` |
 | EXTI-01 | ISR flood | counting semaphore / drop at sensor queue |
+
+---
+
+**Embedded AI Labs** — *Intelligence at the Edge*  
+ಎಂಬೆಡೆಡ್ ಎಐ ಲ್ಯಾಬ್ಸ್  
+**Embedded AI Design Labs Pvt Ltd**  
+Muhammad Samiullah — CTO & Founder  
+© 2026 Copyright. All rights reserved.

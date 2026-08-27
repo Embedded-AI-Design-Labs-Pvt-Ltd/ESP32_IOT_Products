@@ -1,5 +1,7 @@
 /**
  * @file iot_board.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Board bring-up: reset reason, identity of native vs external silicon.
  *
  * @syscalls esp_reset_reason, esp_rom_printf (via log)

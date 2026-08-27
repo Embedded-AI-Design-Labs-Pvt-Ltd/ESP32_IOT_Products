@@ -1,5 +1,7 @@
 /**
  * @file iot_uart.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief UART HAL. UART1 + IOT_PIN_RS485_DE is the RS485 path (external transceiver).
  */
 #ifndef IOT_UART_H

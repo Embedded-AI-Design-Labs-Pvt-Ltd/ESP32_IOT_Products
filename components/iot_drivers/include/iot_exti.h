@@ -1,5 +1,7 @@
 /**
  * @file iot_exti.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief External GPIO interrupt HAL. ISR only gives a semaphore / notifies a task.
  */
 #ifndef IOT_EXTI_H

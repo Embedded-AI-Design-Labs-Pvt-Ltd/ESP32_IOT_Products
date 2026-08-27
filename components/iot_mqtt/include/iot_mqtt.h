@@ -1,5 +1,7 @@
 /**
  * @file iot_mqtt.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Generic MQTT service for AWS IoT, Azure IoT Hub, and generic MQTTS.
  */
 #ifndef IOT_MQTT_H

@@ -69,3 +69,11 @@ No production credentials in source. NVS namespace `iot`. TLS via ESP-IDF certif
 ## OTA architecture
 
 Dual OTA partitions (`partitions.csv`). `CONFIG_BOOTLOADER_APP_ROLLBACK_ENABLE`. Download pets the task WDT. Failure calls `esp_https_ota_abort` so the previous slot remains bootable. `app_main` calls `iot_ota_mark_valid()` after a healthy boot.
+
+---
+
+**Embedded AI Labs** — *Intelligence at the Edge*  
+ಎಂಬೆಡೆಡ್ ಎಐ ಲ್ಯಾಬ್ಸ್  
+**Embedded AI Design Labs Pvt Ltd**  
+Muhammad Samiullah — CTO & Founder  
+© 2026 Copyright. All rights reserved.

@@ -1,5 +1,7 @@
 /**
  * @file iot_uc_priv.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Internal use-case handlers. Not for application includes.
  */
 #ifndef IOT_UC_PRIV_H

@@ -1,5 +1,7 @@
 /**
  * @file iot_uc.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Use-case catalog, JSON helpers, and dispatcher.
  *
  * @syscalls none (handlers may call NVS/OTA/GPIO)

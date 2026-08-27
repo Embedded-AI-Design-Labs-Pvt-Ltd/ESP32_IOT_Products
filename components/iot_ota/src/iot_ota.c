@@ -1,5 +1,7 @@
 /**
  * @file iot_ota.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief HTTPS OTA using esp_https_ota. Abort leaves previous slot bootable.
  *
  * @syscalls esp_https_ota, esp_ota_mark_app_valid_cancel_rollback, esp_task_wdt_reset

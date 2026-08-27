@@ -1,5 +1,7 @@
 /**
  * @file iot_ble.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief NimBLE GATT: Device Info, Config, Sensor, Control, Diagnostics, OTA status.
  *
  * Heavy work is posted to command_q. GAP/GATT callbacks return immediately.

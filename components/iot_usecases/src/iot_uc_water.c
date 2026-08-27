@@ -1,5 +1,7 @@
 /**
  * @file iot_uc_water.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Smart water meter use cases: metering, leak, burst, valve, tamper, billing freeze.
  */
 #include "iot_uc_priv.h"

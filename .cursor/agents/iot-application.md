@@ -13,3 +13,11 @@ When invoked:
 5. EV charger and automotive profiles must separate safety-critical control from IoT connectivity. This firmware is connectivity/telemetry, not a certified safety controller.
 
 Implement one profile at a time. Keep profiles selectable via Kconfig `IOT_PROFILE_*`.
+
+---
+
+**Embedded AI Labs** — *Intelligence at the Edge*  
+ಎಂಬೆಡೆಡ್ ಎಐ ಲ್ಯಾಬ್ಸ್  
+**Embedded AI Design Labs Pvt Ltd**  
+Muhammad Samiullah — CTO & Founder  
+© 2026 Copyright. All rights reserved.

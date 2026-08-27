@@ -11,3 +11,11 @@ When invoked:
 3. Fail CI on compiler errors, warnings-as-errors where configured, unit-test failures, static-analysis failures, format violations.
 4. Support cloud publish examples for AWS/Azure/GCP as optional jobs — never embed secrets; use Jenkins credentials.
 5. Produce reproducible builds (idf.py build with recorded IDF version and sdkconfig hash).
+
+---
+
+**Embedded AI Labs** — *Intelligence at the Edge*  
+ಎಂಬೆಡೆಡ್ ಎಐ ಲ್ಯಾಬ್ಸ್  
+**Embedded AI Design Labs Pvt Ltd**  
+Muhammad Samiullah — CTO & Founder  
+© 2026 Copyright. All rights reserved.

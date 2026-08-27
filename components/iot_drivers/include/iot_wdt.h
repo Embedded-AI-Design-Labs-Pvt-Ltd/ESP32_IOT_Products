@@ -1,5 +1,7 @@
 /**
  * @file iot_wdt.h
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Task watchdog HAL wrapping esp_task_wdt.
  */
 #ifndef IOT_WDT_H

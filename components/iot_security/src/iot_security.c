@@ -1,5 +1,7 @@
 /**
  * @file iot_security.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Identity from MAC; command size/schema gate; TLS via IDF cert bundle.
  *
  * Production certs live in NVS or flash partitions — never in this file.

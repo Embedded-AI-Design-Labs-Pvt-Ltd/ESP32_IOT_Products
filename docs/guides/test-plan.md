@@ -35,3 +35,11 @@ Every automated test below is implemented in `tests/host/test_runner.c` unless m
 - Invalid OTA URL (`http://`) → `IOT_ERR_DENIED`
 - CAN cloud `can_tx` → `IOT_ERR_DENIED`
 - EV `contactor` command → `IOT_ERR_DENIED`
+
+---
+
+**Embedded AI Labs** — *Intelligence at the Edge*  
+ಎಂಬೆಡೆಡ್ ಎಐ ಲ್ಯಾಬ್ಸ್  
+**Embedded AI Design Labs Pvt Ltd**  
+Muhammad Samiullah — CTO & Founder  
+© 2026 Copyright. All rights reserved.

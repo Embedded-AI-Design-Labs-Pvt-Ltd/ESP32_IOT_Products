@@ -1,5 +1,7 @@
 /**
  * @file iot_provision.c
+ * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
+ * @author    Muhammad Samiullah, CTO & Founder
  * @brief Minimal JSON field extractor for BLE commissioning payloads.
  *
  * Expected keys: ssid, pass, mqtt, user, mpw, cloud (integers 0-3).
